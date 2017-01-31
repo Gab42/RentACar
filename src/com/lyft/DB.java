@@ -15,16 +15,14 @@ public class DB {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://192.168.10.158:3306/ridebooked";
 	// Database credentials
-	static final String USER = "user";
-	static final String PASS = "pass";
-	static Connection conn = null;
-	static Statement stmt = null;
+    static final String USER = "user";
+    static final String PASS = "pass";
+    static Connection conn = null;
+    static Statement stmt = null;
     
-	public static void openCon() throws ClassNotFoundException, SQLException{
-
-		
-		// Register JDBC driver
-        Class.forName (JDBC_DRIVER);
+    public static void openCon() throws ClassNotFoundException, SQLException{		
+    	// Register JDBC driver
+    	Class.forName (JDBC_DRIVER);
 
         // Open a connection
         System.out.println("Connecting to database...");
@@ -50,7 +48,6 @@ public class DB {
 	public static JSONArray query(String query) throws Exception{
 		ResultSet rs = stmt.executeQuery(query);
 		return ResultSetConvertor.convertResultSetIntoJSON(rs);
-		//return rs;
 	}
 	
 
