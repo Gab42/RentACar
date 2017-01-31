@@ -34,8 +34,8 @@ public class DB {
         
         // Alternate way to connect
 		/*MysqlDataSource dataSource = new MysqlDataSource();
-		dataSource.setUser("root");
-		dataSource.setPassword("qhuser");
+		dataSource.setUser("user");
+		dataSource.setPassword("pass");
 		dataSource.setServerName("192.168.10.158");		
 		Connection conn = dataSource.getConnection();*/
 	}
