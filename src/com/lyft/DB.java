@@ -15,8 +15,8 @@ public class DB {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://192.168.10.158:3306/ridebooked";
 	// Database credentials
-	static final String USER = "newyork";
-	static final String PASS = "qhuser";
+	static final String USER = "user";
+	static final String PASS = "pass";
 	static Connection conn = null;
 	static Statement stmt = null;
     

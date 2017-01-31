@@ -24,7 +24,7 @@ public class ListCars {
 		DB.openCon();
 		
 		// Query the database for accounts
-		JSONArray jsonArray = DB.query("SELECT * FROM accounts");	
+		JSONArray jsonArray = DB.query("SELECT * FROM cars");	
 
 		// Close connection
 		DB.closeCon();
