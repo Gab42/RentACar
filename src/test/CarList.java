@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class CarList {
 	@Test
 	public void test() {
-		ListCars service = new ListCars();
+		 ListCars service = new ListCars();
 		 String message = service.test();
 		 assertEquals( "test", message );
 	}
