@@ -23,7 +23,7 @@ public class ListCars {
 		// Open a connection to the database
 		DB.openCon();
 		
-		// Query the database for accounts
+		// Query the database
 		JSONArray jsonArray = DB.query("SELECT * FROM cars");	
 
 		// Close connection
